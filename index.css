@@ -1,0 +1,79 @@
+body {
+  background-color: #ecf0f1;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+.btn {
+  cursor: pointer;
+}
+.form,
+.greetings {
+  display: none;
+}
+.showing {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
+.center {
+  padding: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font: 188px;
+  color: white;
+}
+
+.js-weather {
+  position: absolute;
+  top: 25px;
+  right: 15px;
+  font-size: 12px;
+}
+#clock {
+  font-size: 187px;
+}
+.type {
+  font-size: 36px;
+  background: none;
+  border: none;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.8);
+  margin-bottom: 20px;
+  outline: none;
+  text-align: right;
+  color: white;
+  margin: 0 0 20px;
+  padding: 1px 0px;
+}
+.todo {
+  font-size: 22px;
+  background: none;
+  border: none;
+  color: white;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.8);
+  margin-bottom: 20px;
+  outline: none;
+  margin: 20px;
+  padding: 1px 0px;
+}
+input::placeholder {
+  color: white;
+}
